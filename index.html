@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>توقيع ملفات IPA</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>توقيع ملفات IPA</h1>
+        <form id="uploadForm" action="/upload" method="POST" enctype="multipart/form-data">
+            <!-- رفع ملف IPA -->
+            <label for="fileInput">اختر ملف IPA:</label>
+            <input type="file" id="fileInput" name="ipaFile" accept=".ipa" required>
+
+            <!-- رفع ملف P12 -->
+            <label for="p12Input">اختر ملف P12:</label>
+            <input type="file" id="p12Input" name="p12File" accept=".p12" required>
+
+            <!-- رفع ملف Provisioning Profile -->
+            <label for="provisioningInput">اختر ملف Provisioning Profile:</label>
+            <input type="file" id="provisioningInput" name="provisioningFile" accept=".mobileprovision" required>
+
+            <!-- إدخال كلمة مرور الشهادة -->
+            <label for="passwordInput">كلمة مرور الشهادة (P12):</label>
+            <input type="password" id="passwordInput" name="certificatePassword" required>
+
+            <!-- زر رفع وتوقيع -->
+            <button type="submit">توقيع</button>
+        </form>
+        <div id="status"></div>
+    </div>
+
+    <script src="/scripts.js"></script>
+</body>
+</html>
