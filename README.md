@@ -8,6 +8,6 @@
 - Node.js
 - ملف `messages.json` تحط به رسايل
 - ثبت مكتبة `discord.js-selfbot-v13`
-- تاكد برربوت داخل سيرفر
+- تاكد Probot داخل سيرفر
 ```bash
 npm install discord.js-selfbot-v13
